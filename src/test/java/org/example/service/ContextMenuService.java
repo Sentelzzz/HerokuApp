@@ -18,7 +18,7 @@ public class ContextMenuService {
     Alert alert;
 
     public void openAlert() {
-        contextMenuPage.openPage(CONTEXT_MENU_URL);
+        contextMenuPage.openContextMenuPage(CONTEXT_MENU_URL);
         contextMenuPage.clickToHotSpot();
     }
 
