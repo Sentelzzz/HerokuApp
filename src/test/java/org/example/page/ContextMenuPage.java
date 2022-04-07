@@ -8,14 +8,14 @@ import org.openqa.selenium.support.FindBy;
 public class ContextMenuPage extends Page {
 
     @FindBy (xpath = "//div[@id='hot-spot']")
-    private WebElement hotSpot;
+    private WebElement hotSpotDiv;
 
-    public void openPage(String url) {
+    public void openContextMenuPage(String url) {
         driver.get(url);
     }
 
     public void clickToHotSpot() {
         Actions actions = new Actions(DriverSingleton.getDriver());
-        actions.contextClick(hotSpot).perform();
+        actions.contextClick(hotSpotDiv).perform();
     }
 }

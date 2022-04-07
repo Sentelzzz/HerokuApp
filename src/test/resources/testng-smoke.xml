@@ -4,6 +4,8 @@
     <test name="LoginPageTest" verbose="1">
         <classes>
             <class name="org.example.test.ContextMenuTest" />
+            <class name="org.example.test.DynamicControlsTest" />
+            <class name="org.example.test.UploadTest" />
         </classes>
     </test>
 </suite>

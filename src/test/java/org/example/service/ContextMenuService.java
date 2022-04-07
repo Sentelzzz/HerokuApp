@@ -12,13 +12,13 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.alertIsPresent;
 
 public class ContextMenuService {
 
-    public final static String CONTEXT_MENU_URL = "http://the-internet.herokuapp.com/context_menu";
+    private final static String CONTEXT_MENU_URL = "http://the-internet.herokuapp.com/context_menu";
     private ContextMenuPage contextMenuPage = new ContextMenuPage();
 
     Alert alert;
 
     public void openAlert() {
-        contextMenuPage.openPage(CONTEXT_MENU_URL);
+        contextMenuPage.openContextMenuPage(CONTEXT_MENU_URL);
         contextMenuPage.clickToHotSpot();
     }
 
